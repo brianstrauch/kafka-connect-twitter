@@ -1,4 +1,7 @@
+.classpath
 .java-version
+.project
+.settings/
 .vscode/
 secret-config.json
 target/
