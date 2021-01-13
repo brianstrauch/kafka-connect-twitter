@@ -18,4 +18,3 @@ You must obtain an API token from https://developer.twitter.com and install Conf
 3. `confluent local services connect start`
 4. `confluent local services connect connector load twitter-source -c example-config.json`
 5. `confluent local services kafka consume twitter`
-6. `confluent local services stop`

@@ -4,7 +4,8 @@
         "connector.class": "com.brianstrauch.kafka.connect.twitter.TwitterSourceConnector",
         "tasks.max": "1",
         "topic": "twitter",
-        "twitter.bearer.token": "",
+        "twitter.api.key": "",
+        "twitter.api.secret.key": "",
         "twitter.hashtag": "kafka"
     }
 }

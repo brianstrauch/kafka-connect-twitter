@@ -12,15 +12,17 @@ import org.apache.kafka.connect.source.SourceConnector;
 
 public class TwitterSourceConnector extends SourceConnector {
     public static final String TOPIC_CONFIG = "topic";
-    public static final String BEARER_TOKEN_CONFIG = "twitter.bearer.token";
+    public static final String API_KEY_CONFIG = "twitter.api.key";
+    public static final String API_SECRET_KEY_CONFIG = "twitter.api.secret.key";
     public static final String USER_CONFIG = "twitter.user";
     public static final String HASHTAG_CONFIG = "twitter.hashtag";
 
     public static final ConfigDef CONFIG_DEF = new ConfigDef()
         .define(TOPIC_CONFIG, Type.STRING, Importance.HIGH, "Topic to write tweets to.")
-        .define(BEARER_TOKEN_CONFIG, Type.STRING, Importance.HIGH, "Token used to access the Twitter v2 API.")
-        .define(USER_CONFIG, Type.STRING, "", Importance.HIGH, "Twitter user to read tweets from.")
-        .define(HASHTAG_CONFIG, Type.STRING, "", Importance.HIGH, "Hashtag to filter tweets by.");
+        .define(API_KEY_CONFIG, Type.STRING, Importance.HIGH, "Twitter API key.")
+        .define(API_SECRET_KEY_CONFIG, Type.STRING, Importance.HIGH, "Twitter API secret key.")
+        .define(USER_CONFIG, Type.STRING, null, Importance.HIGH, "Twitter user to read tweets from.")
+        .define(HASHTAG_CONFIG, Type.STRING, null, Importance.HIGH, "Hashtag to filter tweets by.");
 
     private Map<String, String> properties;
 
