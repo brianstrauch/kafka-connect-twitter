@@ -14,12 +14,12 @@ A Kafka source connector for the Twitter v2 API.
 
 ## Try it out!
 
-You must first obtain an API token from https://developer.twitter.com and install Confluent Platform from https://www.confluent.io/product/confluent-platform.
+You must first obtain an API key from https://developer.twitter.com and install Confluent Platform from https://www.confluent.io/product/confluent-platform.
 
 1. `mvn clean package`
 2. `mkdir -p ${CONFLUENT_HOME}/share/java/plugins && cp target/kafka-connect-twitter-*.jar ${CONFLUENT_HOME}/share/java/plugins`
 3. `confluent local services connect start`
-4. `confluent local services connect connector load twitter-source -c example-config.json`
+4. `confluent local services connect connector load twitter-source -c examples/source-config-hashtag.json`
 5. `confluent local services kafka consume twitter`
 
 ## ⚠️ Under Development ⚠️

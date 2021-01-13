@@ -1,0 +1,11 @@
+{
+    "name": "twitter-source",
+    "config": {
+        "connector.class": "com.brianstrauch.kafka.connect.twitter.TwitterSourceConnector",
+        "tasks.max": "1",
+        "topic": "twitter",
+        "twitter.api.key": "YOUR_API_KEY",
+        "twitter.api.secret.key": "YOUR_API_SECRET_KEY",
+        "twitter.user": "confluentinc"
+    }
+}
