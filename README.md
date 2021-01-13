@@ -9,8 +9,8 @@ A Kafka source connector for the Twitter v2 API.
 
 ## Functionality
 
-* Stream tweets from a @username
-* Stream tweets containing a #hashtag
+* <a href="https://github.com/brianstrauch/kafka-connect-twitter/blob/master/examples/source-config-user.json">Stream tweets from a @user</a>
+* <a href="https://github.com/brianstrauch/kafka-connect-twitter/blob/master/examples/source-config-hashtag.json">Stream tweets containing a #hashtag</a>
 
 ## Try it out!
 
